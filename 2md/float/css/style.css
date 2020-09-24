@@ -1,0 +1,106 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color:rgba(141, 137, 141, 0.158);
+  text-decoration-color: purple;
+}
+
+
+div, section1{
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration-color:purple;
+}
+
+.nav{
+  list-style-type: none;
+  margin: 50px;
+  padding: 0px 20px;
+  height: 100px;
+  background: #989596;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color:blue;
+}
+
+.clearfix{
+  content: "";
+  clear: both;
+  display: 1000px;
+}
+
+.lfloated{
+  font-style: italic;
+  color: purple;
+  float: left;
+  width: 30%;
+}
+
+.rfloated{
+  font-style: italic;
+  color: purple;
+  float: right;
+  width: 30%;
+}
+
+.ordinary{
+  font-style: italic;
+  color: purple;
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+ img {
+  float: right;
+} 
+.img-container {
+  
+  float: right;
+  width: 50%;
+  padding: 30px;
+}
+.img-container1{
+  float: left;
+  width: 50%;
+  padding: 30px;
+
+}
+.img-container2{
+  float: none;;
+  width: 50%;
+  padding: 30px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
