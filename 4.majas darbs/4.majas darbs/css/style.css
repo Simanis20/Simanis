@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(161, 153, 153);
+  display: inline-block;
+  margin: 20px;
+
+}
+
+
+table {
+  background-color:lightgoldenrodyellow;
+  display: inline-block;
+  box-shadow: 10px 10px 10px 10px black;
+}
