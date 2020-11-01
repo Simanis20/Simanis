@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontends</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="aside-backdrop close"></div>
+    <div id="aside" class="close">
+        <button class="sidebar">
+            <span>Open</span>
+        </button>
+
+        <div class="form-wrapper">
+          <form name="subscribeForm" novalidate>
+            <label>
+                <span>Username</span>
+
+                <input name="username"/>
+                <div class="error-box"></div>
+            </label>
+            <label>
+                <span>E-mail</span>
+                <input name="email" type="email"/>
+                <div class="error-box"></div>
+            </label>
+            <label class="special-deals">
+                <input type="checkbox" name="areSpecialDeals" value="true">
+                <span>Send me</span>
+            </label>
+            <label class="extra-fields">
+                <span>Receive them every:</span>
+                <select name="specialDealsTimeCircle">
+                    <option value="Hour">Hour</option>
+                    <option value="Day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month">Month<option>
+                </select>
+            </label>
+            <button id="subscribe-btn"type="button">Subscribe<button>
+        </form>
+    </div>
+</div>
+<div id="content">
+    <table class="list-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>E-mail</th>
+                <th>Special offers</th>
+                <th>Offer cycle</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<div class="popup-wrapper">
+  <div id="popup">
+      <div class="content-wrapper">
+          <div class="content">
+              Thank you for Subscribing
+          </div>
+          <div class="actions">
+              <button>CLOSE</button>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
